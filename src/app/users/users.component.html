@@ -1,0 +1,32 @@
+<h1  >Users Count :{{userList.length}}</h1>
+<h1 *ngIf="userList.length ==0">No Data</h1>
+<button *ngIf="userList.length ==0" class="btn btn-success">Add Users</button>
+<table class="table table-info">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">username</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Email</th>
+        <th scope="col">Date</th>
+        <th scope="col">website</th>
+        <th scope="col">Address</th>
+        <th scope="col">ZIP Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let users of userList">
+        <th scope="row">{{users.id}}</th>
+        <td>{{users.name | lowercase}}</td>
+        <td>{{users.username}}</td>
+        <td>{{users.phone}}</td>
+        <td>{{users.email}}</td>
+        <td>{{users.date | date:'mediumDate'}}</td>
+        <td>{{users.website}}</td>
+        <td>{{users.address.city}}</td>
+        <td>{{users.address.zipcode}}</td>
+      </tr>
+   
+    </tbody>
+  </table>

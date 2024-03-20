@@ -1,0 +1,23 @@
+<h1>Angular tutorials</h1>
+<h2>{{title}}</h2>
+<table class="table">
+  <thead>
+    <tr>
+              <th >#</th>
+      <th scope="col">First</th>
+      <th scope="col">Email</th>
+      <th scope="col">action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let x of employee;index as i">
+      <td>{{x.id}}</td>
+      <td>{{x.userId}}</td>
+      <td>{{x.title}}</td>
+      <td > <button type="button" class="btn btn-link" routerLink="/empdetails/{{x.id}}">Edit</button></td>
+      <td > <button type="button" class="btn btn-link" (click)="delete(x,i)">Delete</button></td>
+    </tr>
+    <h1>count of the employees:{{employee.length}}</h1>
+  
+  </tbody>
+</table>
