@@ -13,6 +13,9 @@ import { EmpdetailsComponent } from './empdetails/empdetails.component';
 import { EmplistComponent } from './emplist/emplist.component';
 import { UsersComponent } from './users/users.component';
 import { HeaderComponent } from './header/header.component';
+import { ParentComponent } from './pagescomunication/parent/parent.component';
+import { ChildComponent } from './pagescomunication/child/child.component';
+import { CardinfoComponent } from './pagescomunication/cardinfo/cardinfo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { HeaderComponent } from './header/header.component';
     EmpdetailsComponent,
     EmplistComponent,
     UsersComponent,
-    HeaderComponent
+    HeaderComponent,
+    ParentComponent,
+    ChildComponent,
+    CardinfoComponent
   ],
   imports: [
     BrowserModule,

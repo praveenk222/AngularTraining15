@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;" *ngFor="let t of data">
+    <div class="card-body">
+      <h5 class="card-title">{{t.title}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{t.type}}</h6>
+      <p class="card-text">{{t.name}}</p>
+      <a [routerLink]="t.route" class="card-link">Details</a>
+    </div>
+  </div>
