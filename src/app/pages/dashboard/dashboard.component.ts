@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
 data:any=[
-  {'data':"Parent to Child",'route':"/emp",'message':'test tete','title':'Share data'}
+  {'data':"Parent to Child",'route':"/emp",'message':'test tete','title':'Share data','img':'assets/img/card.jpg'}
 ]
 }

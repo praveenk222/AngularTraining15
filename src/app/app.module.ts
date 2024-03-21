@@ -20,6 +20,7 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
 import { SidebarComponent } from './pages/sidebar/sidebar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { CardsComponent } from './pages/dashboard/cards/cards.component';
+import { TopicdetailsComponent } from './pages/dashboard/topicdetails/topicdetails.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CardsComponent } from './pages/dashboard/cards/cards.component';
     NavbarComponent,
     SidebarComponent,
     DashboardComponent,
-    CardsComponent
+    CardsComponent,
+    TopicdetailsComponent
   ],
   imports: [
     BrowserModule,
