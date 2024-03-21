@@ -10,6 +10,7 @@ import { UsersComponent } from './users/users.component';
 import { CardinfoComponent } from './pagescomunication/cardinfo/cardinfo.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { TopicdetailsComponent } from './pages/dashboard/topicdetails/topicdetails.component';
+import { LifecycleHooksComponent } from './hooks/lifecycle-hooks/lifecycle-hooks.component';
 
 const routes: Routes = [
   { path: 'emp', component: EmplistComponent ,pathMatch: 'full'} ,
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'card', component: CardinfoComponent },
   { path: '', component: DashboardComponent },
   { path: 'topic', component: TopicdetailsComponent },
+  { path: 'lifecycle', component: LifecycleHooksComponent },
 ];
 
 @NgModule({

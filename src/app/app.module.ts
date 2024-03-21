@@ -21,6 +21,7 @@ import { SidebarComponent } from './pages/sidebar/sidebar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { CardsComponent } from './pages/dashboard/cards/cards.component';
 import { TopicdetailsComponent } from './pages/dashboard/topicdetails/topicdetails.component';
+import { LifecycleHooksComponent } from './hooks/lifecycle-hooks/lifecycle-hooks.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { TopicdetailsComponent } from './pages/dashboard/topicdetails/topicdetai
     SidebarComponent,
     DashboardComponent,
     CardsComponent,
-    TopicdetailsComponent
+    TopicdetailsComponent,
+    LifecycleHooksComponent
   ],
   imports: [
     BrowserModule,

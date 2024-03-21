@@ -11,13 +11,18 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-menu-button-wide"></i><span>User Management</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
      
           <li>
-            <a href="components-tabs.html">
-              <i class="bi bi-circle"></i><span>Tabs</span>
+            <a routerLink="/emp">
+              <i class="bi bi-circle"></i><span>Employees</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/lifecycle">
+              <i class="bi bi-circle"></i><span>Life-Cycle Hooks</span>
             </a>
           </li>
        
@@ -51,7 +56,8 @@
           </li>
          
         </ul>
-      </li><!-- End Tables Nav -->
+      </li>
+      <!-- End Tables Nav -->
 
   
  

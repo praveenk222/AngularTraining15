@@ -11,4 +11,5 @@ baseUrl:string="https://jsonplaceholder.typicode.com/users"
   getUser(){
   return  this.http.get(this.baseUrl);
   }
+ 
 }
