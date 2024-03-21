@@ -8,6 +8,7 @@ import { EmpdetailsComponent } from './empdetails/empdetails.component';
 import { EmplistComponent } from './emplist/emplist.component';
 import { UsersComponent } from './users/users.component';
 import { CardinfoComponent } from './pagescomunication/cardinfo/cardinfo.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: 'emp', component: EmplistComponent ,pathMatch: 'full'} ,
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'users', component: UsersComponent },
   { path: 'parentc', component: ParentComponent },
   { path: 'card', component: CardinfoComponent },
+  { path: '', component: DashboardComponent },
 ];
 
 @NgModule({

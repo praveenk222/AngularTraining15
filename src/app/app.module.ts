@@ -12,10 +12,14 @@ import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { EmpdetailsComponent } from './empdetails/empdetails.component';
 import { EmplistComponent } from './emplist/emplist.component';
 import { UsersComponent } from './users/users.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './pages/header/header.component';
 import { ParentComponent } from './pagescomunication/parent/parent.component';
 import { ChildComponent } from './pagescomunication/child/child.component';
 import { CardinfoComponent } from './pagescomunication/cardinfo/cardinfo.component';
+import { NavbarComponent } from './pages/navbar/navbar.component';
+import { SidebarComponent } from './pages/sidebar/sidebar.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { CardsComponent } from './pages/dashboard/cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { CardinfoComponent } from './pagescomunication/cardinfo/cardinfo.compone
     HeaderComponent,
     ParentComponent,
     ChildComponent,
-    CardinfoComponent
+    CardinfoComponent,
+    NavbarComponent,
+    SidebarComponent,
+    DashboardComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
