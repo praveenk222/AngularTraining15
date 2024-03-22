@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
   parentdata:any=[
-  {'data':"Parent to Child",'route':"/emp",'message':'test tete','title':'Share data','img':'assets/img/card.jpg'},
-  {'data':"View Child",'route':"/emp",'message':'using child component after ngview init','title':'Share data','img':'assets/img/card.jpg'},
+  {'data':"Life Cycles",'route':"/emp",'message':'test tete','title':'Share data','img':'assets/img/card.jpg'},
 ]
 }

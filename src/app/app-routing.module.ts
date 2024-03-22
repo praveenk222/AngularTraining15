@@ -11,6 +11,7 @@ import { CardinfoComponent } from './pagescomunication/cardinfo/cardinfo.compone
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { TopicdetailsComponent } from './pages/dashboard/topicdetails/topicdetails.component';
 import { LifecycleHooksComponent } from './hooks/lifecycle-hooks/lifecycle-hooks.component';
+import { CounterComponent } from './hooks/lifecycle-hooks/counter/counter.component';
 
 const routes: Routes = [
   { path: 'emp', component: EmplistComponent ,pathMatch: 'full'} ,
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'topic', component: TopicdetailsComponent },
   { path: 'lifecycle', component: LifecycleHooksComponent },
+  { path: 'count', component: CounterComponent },
 ];
 
 @NgModule({

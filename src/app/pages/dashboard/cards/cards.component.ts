@@ -7,8 +7,11 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
 })
 export class CardsComponent implements OnInit,OnChanges {
 @Input() data:any;
+parentdata:any=[
+  {'route':"/lifecycle",'title':'Life - Cycle '},
+]
 constructor(){
-
+console.log(this.parentdata)
 }
   ngOnChanges(changes: SimpleChanges): void {
     console.log(this.data)

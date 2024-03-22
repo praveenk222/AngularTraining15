@@ -8,13 +8,13 @@
         <div class="card-body">
           <h5 class="card-title">{{data.data}}</h5>
           <p class="card-text">{{data.message}}</p>
-          <!-- <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link active" route="#">{{}}</a>
+          <ul class="nav">
+            <li class="nav-item" *ngFor="let d of parentdata">
+              <a class="nav-link active" [routerLink]='d.route'>{{d.title}}</a>
             </li>
-            -->
+            
         
-          <!-- </ul> -->
+          </ul>
           <br/>
           <a [routerLink]="data.route" class="btn btn-primary">Go somewhere</a>
         </div>
