@@ -1,0 +1,7 @@
+<p>hookparent works!</p>
+
+<button (click)="toggleCHild()">Toggle Child</button>
+<label>Parent Input</label>
+<input type="text" [(ngModel)]="name">
+<hook-child *ngIf="isChild" [name]="name">
+</hook-child>

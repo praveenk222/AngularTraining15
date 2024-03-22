@@ -23,6 +23,8 @@ import { CardsComponent } from './pages/dashboard/cards/cards.component';
 import { TopicdetailsComponent } from './pages/dashboard/topicdetails/topicdetails.component';
 import { LifecycleHooksComponent } from './hooks/lifecycle-hooks/lifecycle-hooks.component';
 import { CounterComponent } from './hooks/lifecycle-hooks/counter/counter.component';
+import { HookchildComponent } from './hooks/lifecycle-hooks/hookchild/hookchild.component';
+import { HookparentComponent } from './hooks/lifecycle-hooks/hookparent/hookparent.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { CounterComponent } from './hooks/lifecycle-hooks/counter/counter.compon
     CardsComponent,
     TopicdetailsComponent,
     LifecycleHooksComponent,
-    CounterComponent
+    CounterComponent,
+    HookchildComponent,
+    HookparentComponent
   ],
   imports: [
     BrowserModule,

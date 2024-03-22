@@ -14,7 +14,7 @@ this.getAllTodos();
 }
   
 getAllTodos(){
-  this.dataservice.getAllTodos().subscribe(x=>{
+  this.employee= this.dataservice.getAllTodos().subscribe(x=>{
     console.log(x)
     this.employee=x;
   })
@@ -27,4 +27,5 @@ getAllTodos(){
   this.employee.splice(i,1)
   console.log(this.employee)
   }
+  
   }
