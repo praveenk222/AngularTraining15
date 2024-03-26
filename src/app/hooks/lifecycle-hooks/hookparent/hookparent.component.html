@@ -1,7 +1,7 @@
-<p>hookparent works!</p>
-
+<h1>Parent Component</h1>
 <button (click)="toggleCHild()">Toggle Child</button>
 <label>Parent Input</label>
 <input type="text" [(ngModel)]="name">
 <hook-child *ngIf="isChild" [name]="name">
+<h2 #myheader>From Parent content inject</h2>
 </hook-child>

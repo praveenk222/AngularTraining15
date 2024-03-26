@@ -13,6 +13,7 @@ import { TopicdetailsComponent } from './pages/dashboard/topicdetails/topicdetai
 import { LifecycleHooksComponent } from './hooks/lifecycle-hooks/lifecycle-hooks.component';
 import { CounterComponent } from './hooks/lifecycle-hooks/counter/counter.component';
 import { HookparentComponent } from './hooks/lifecycle-hooks/hookparent/hookparent.component';
+import { DatatableComponent } from './components/materials/datatable/datatable.component';
 
 const routes: Routes = [
   { path: 'emp', component: EmplistComponent ,pathMatch: 'full'} ,
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'lifecycle', component: LifecycleHooksComponent },
   { path: 'count', component: CounterComponent },
   { path: 'parent', component: HookparentComponent },
+  { path: 'dttable', component: DatatableComponent },
 ];
 
 @NgModule({

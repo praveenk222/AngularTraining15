@@ -25,7 +25,9 @@ import { LifecycleHooksComponent } from './hooks/lifecycle-hooks/lifecycle-hooks
 import { CounterComponent } from './hooks/lifecycle-hooks/counter/counter.component';
 import { HookchildComponent } from './hooks/lifecycle-hooks/hookchild/hookchild.component';
 import { HookparentComponent } from './hooks/lifecycle-hooks/hookparent/hookparent.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DatatableComponent } from './components/materials/datatable/datatable.component';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,13 +50,16 @@ import { HookparentComponent } from './hooks/lifecycle-hooks/hookparent/hookpare
     LifecycleHooksComponent,
     CounterComponent,
     HookchildComponent,
-    HookparentComponent
+    HookparentComponent,
+    DatatableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
