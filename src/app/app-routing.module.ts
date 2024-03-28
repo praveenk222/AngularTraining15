@@ -14,6 +14,7 @@ import { LifecycleHooksComponent } from './hooks/lifecycle-hooks/lifecycle-hooks
 import { CounterComponent } from './hooks/lifecycle-hooks/counter/counter.component';
 import { HookparentComponent } from './hooks/lifecycle-hooks/hookparent/hookparent.component';
 import { DatatableComponent } from './components/materials/datatable/datatable.component';
+import { LoginformComponent } from './components/materials/loginform/loginform.component';
 
 const routes: Routes = [
   { path: 'emp', component: EmplistComponent ,pathMatch: 'full'} ,
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'count', component: CounterComponent },
   { path: 'parent', component: HookparentComponent },
   { path: 'dttable', component: DatatableComponent },
+  { path: 'login', component: LoginformComponent },
 ];
 
 @NgModule({

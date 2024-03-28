@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort,Sort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
 import { HttpdataService } from 'src/app/services/httpdata.service';
 
 @Component({
@@ -6,18 +9,39 @@ import { HttpdataService } from 'src/app/services/httpdata.service';
   templateUrl: './datatable.component.html',
   styleUrls: ['./datatable.component.css']
 })
-export class DatatableComponent {
-  constructor(private httpservice:HttpdataService){
-    this.gettodoList();
-  }
+export class DatatableComponent implements AfterViewInit {
+  pagesize=5;
+  dataSource :MatTableDataSource<PeriodicElement> ;
+  @ViewChild(MatPaginator) paginator!:MatPaginator;
+  @ViewChild(MatSort) sort!:MatSort;
   displayedColumns: string[] = ['positions', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
-
+  
+  constructor(private httpservice:HttpdataService){
+     //this.gettodoList();
+    this.dataSource=new MatTableDataSource(ELEMENT_DATA)
+  }
+ngAfterViewInit(): void {
+    this.dataSource.paginator=this.paginator;
+    this.dataSource.sort=this.sort;
+}
+applyfilter(event:any){debugger
+  let fitlervalue=event.target.value;
+  fitlervalue=fitlervalue.trim();
+fitlervalue=fitlervalue.toLowerCase();
+this.dataSource.filter=fitlervalue;
+}
   gettodoList(){
     this.httpservice.getAllTodos().subscribe((res:any)=>{
-      this.dataSource=res;
-      console.log(this.dataSource)
+      this.dataSource=new MatTableDataSource(res);
+      this.dataSource.paginator=this.paginator;
+      // this.dataSource.sort=this.sort;
     })
+  }
+  editdata(data:PeriodicElement){
+console.log(data)
+  }
+  deletedate(data:PeriodicElement){
+console.log(data)
   }
 }
 

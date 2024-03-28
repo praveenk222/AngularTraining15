@@ -1,0 +1,30 @@
+<h1>Login using template driven form</h1>
+<div class="cotainer">
+
+    <mat-card>
+        <!-- template -->
+        <form #loginform="ngForm">
+            <mat-card-title>Login</mat-card-title>
+            <mat-card-content>
+                <mat-form-field>
+                    <input matInput type="email" placeholder="email" ngModel name="email" #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="3" required />
+                    <mat-error *ngIf="email.errors?.['minlength']"> Please Enter minimum 3 characters</mat-error>
+                    <mat-error *ngIf="email.errors?.['required']"> Please Enter the EmilID</mat-error>
+                    <mat-error *ngIf="email.errors?.['pattern']"> Enter valid Email</mat-error>
+
+                </mat-form-field>
+                <br />
+                <mat-form-field>
+                    <input matInput type="password" placeholder="password" ngModel name="password" required
+                        #password="ngModel" />
+                    <mat-error *ngIf="password.errors?.['required']"> Please Enter the password</mat-error>
+
+                </mat-form-field>
+                <br />
+                <button color="primary" mat-raised-button [disabled]="!loginform.valid"  (click)="login(loginform)">Login</button>
+                {{loginform.valid | json}}
+               <p>User Details</p>  {{loginform.value | json}}
+            </mat-card-content>
+        </form>
+    </mat-card>
+</div>

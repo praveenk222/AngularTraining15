@@ -28,6 +28,12 @@ import { HookparentComponent } from './hooks/lifecycle-hooks/hookparent/hookpare
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DatatableComponent } from './components/materials/datatable/datatable.component';
 import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule} from '@angular/material/paginator';
+import {MatInputModule} from '@angular/material/input'
+import {MatSortModule} from '@angular/material/sort';
+import { MatIconModule } from '@angular/material/icon';
+import { LoginformComponent } from './components/materials/loginform/loginform.component';
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +57,8 @@ import {MatTableModule} from '@angular/material/table';
     CounterComponent,
     HookchildComponent,
     HookparentComponent,
-    DatatableComponent
+    DatatableComponent,
+    LoginformComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +66,12 @@ import {MatTableModule} from '@angular/material/table';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatSortModule,
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
