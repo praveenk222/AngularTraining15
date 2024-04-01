@@ -13,3 +13,5 @@
  >>5.delete confirmation popup(done).
 
  >>6.Template Driven Forms route --> dttable or (login)
+
+ >>Reactive forms with validation (Practice)

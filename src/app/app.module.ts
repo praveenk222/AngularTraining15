@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -63,7 +63,8 @@ import {MatCardModule} from '@angular/material/card';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    FormsModule, //for template driveen
+    ReactiveFormsModule, //for reatvie forms
     HttpClientModule,
     BrowserAnimationsModule,
     MatTableModule,

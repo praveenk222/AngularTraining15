@@ -3,7 +3,7 @@
 
     <mat-card>
         <!-- template -->
-        <form #loginform="ngForm">
+        <form #loginTemplateform="ngForm">
             <mat-card-title>Login</mat-card-title>
             <mat-card-content>
                 <mat-form-field>
@@ -21,9 +21,49 @@
 
                 </mat-form-field>
                 <br />
-                <button color="primary" mat-raised-button [disabled]="!loginform.valid"  (click)="login(loginform)">Login</button>
+                <button color="primary" mat-raised-button [disabled]="!loginform.valid"  (click)="login(loginTemplateform)">Login</button>
                 {{loginform.valid | json}}
                <p>User Details</p>  {{loginform.value | json}}
+            </mat-card-content>
+        </form>
+    </mat-card>
+</div>
+<h1>Reactive Forms</h1>
+<div class="cotainer">
+
+    <mat-card>
+        <!-- template -->
+        <!-- <form #loginform="ngForm"> -->
+            <!-- Reactive Forms -->
+        <form [formGroup]="loginform" (ngSubmit)="onSubmit(loginform)">
+            <mat-card-title>Login</mat-card-title>
+            <mat-card-content>
+                <mat-form-field>
+                    <!-- <input matInput type="email" placeholder="email" ngModel name="email" #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="3" required /> -->
+                    <input matInput type="email" placeholder="email"  name="email" formControlName="email"   minlength="3"  />
+                    <mat-error *ngIf="loginform.get('email')?.invalid">Please Enter the EmailID</mat-error>
+                    <mat-error *ngIf="loginform.get('email')?.errors">Please Enter  minumm 3 characters</mat-error>
+                    <!-- <mat-error *ngIf="email.errors?.['minlength']"> Please Enter minimum 3 characters</mat-error> -->
+                    <!-- <mat-error *ngIf="email.errors?.['required']"> Please Enter the EmilID</mat-error> -->
+                    <!-- <mat-error *ngIf="email.errors?.['pattern']"> Enter valid Email</mat-error> -->
+
+                </mat-form-field>
+                <br />
+                <mat-form-field>
+                    <!-- <input matInput type="password" placeholder="password" ngModel name="password" required
+                        #password="ngModel" /> -->
+                    <input matInput type="password" placeholder="password"  formControlName="password" 
+                        />
+                    <!-- <mat-error *ngIf="password.errors?.['required']"> Please Enter the password</mat-error> -->
+                    <mat-error *ngIf="loginform.get('password')?.invalid">Please Enter the Password</mat-error>
+
+                </mat-form-field>
+                <br />
+                <!-- <button color="primary" mat-raised-button [disabled]="!loginform.valid"  (click)="login(loginform)">Login</button> -->
+                <button color="primary" mat-raised-button   type="submit">Login</button>
+               <h3>Is Form Valid :</h3>  <h1>{{loginform.valid | json}}</h1>
+               
+                <h3>Login Form</h3> <h1>{{loginform.value | json}}</h1> 
             </mat-card-content>
         </form>
     </mat-card>
