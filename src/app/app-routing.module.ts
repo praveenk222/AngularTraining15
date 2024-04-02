@@ -15,6 +15,7 @@ import { CounterComponent } from './hooks/lifecycle-hooks/counter/counter.compon
 import { HookparentComponent } from './hooks/lifecycle-hooks/hookparent/hookparent.component';
 import { DatatableComponent } from './components/materials/datatable/datatable.component';
 import { LoginformComponent } from './components/materials/loginform/loginform.component';
+import { StructuralDComponent } from './Demo/Demo18/structural-d/structural-d.component';
 
 const routes: Routes = [
   { path: 'emp', component: EmplistComponent ,pathMatch: 'full'} ,
@@ -32,6 +33,8 @@ const routes: Routes = [
   { path: 'parent', component: HookparentComponent },
   { path: 'dttable', component: DatatableComponent },
   { path: 'login', component: LoginformComponent },
+  { path: 'directives', component: StructuralDComponent },
+
 ];
 
 @NgModule({

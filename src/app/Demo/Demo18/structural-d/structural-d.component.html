@@ -1,0 +1,38 @@
+<ul>
+    <h1>Sturctural Directives</h1>
+    <li>*ngIf</li>
+    <li>*ngFOr</li>
+    <li>*ngSwitch</li>
+</ul>
+<h1>ngIf (Sturctural Directive)</h1>
+TOtal students :{{students.length}}
+<h1>Case 1</h1>
+<div *ngIf="students.length <0">
+<h1>This is if block</h1>
+</div>
+<h1>Case 2</h1>
+<div *ngIf="students.length > 0; then trueblock ;else falseblock"> </div>
+<ng-template #trueblock> trueblock ===>>Total Number of students ={{students.length}} </ng-template>
+<ng-template #falseblock>falseblock ==>>Total Number of students ={{students.length}}</ng-template>
+<button class="btn btn-primary"  (click)="get()">Change student</button>
+<h2>*ngSwitch</h2>
+<div *ngFor="let s of students">
+    <div [ngSwitch]="s.name">
+    <div *ngSwitchCase="'ravi'">HI {{s.name}} </div>
+    <div *ngSwitchCase="'john'">HI {{s.name}} </div>
+    <div *ngSwitchDefault>  Stuend is not in the reacords</div>
+</div>
+<h1>*ngFOr</h1>
+<div *ngFor="let s of students">
+{{s.name}}
+</div>
+
+
+
+
+
+
+<!-- 
+<input />
+<button class="btn btn-primary" (click)="get('blue')">Change Color</button>
+<button class="btn btn-primary" (click)="get('green')">Change Color</button> -->

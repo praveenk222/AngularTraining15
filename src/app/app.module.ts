@@ -34,6 +34,7 @@ import {MatSortModule} from '@angular/material/sort';
 import { MatIconModule } from '@angular/material/icon';
 import { LoginformComponent } from './components/materials/loginform/loginform.component';
 import {MatCardModule} from '@angular/material/card';
+import { StructuralDComponent } from './Demo/Demo18/structural-d/structural-d.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +59,8 @@ import {MatCardModule} from '@angular/material/card';
     HookchildComponent,
     HookparentComponent,
     DatatableComponent,
-    LoginformComponent
+    LoginformComponent,
+    StructuralDComponent
   ],
   imports: [
     BrowserModule,
