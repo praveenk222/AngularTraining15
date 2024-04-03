@@ -15,3 +15,7 @@
  >>6.Template Driven Forms route --> dttable or (login)
 
  >>Reactive forms with validation (Practice)
+
+ >>directives done
+ >>rxjs (imp)
+ >>ngrxstore

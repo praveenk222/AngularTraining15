@@ -1,4 +1,18 @@
-<ul>
+<h1>Attribute Directives</h1>
+
+<input name="angular" [(ngModel)]="name" >
+<p>One way data binding --> {{name}}</p>
+<h1>ngstyle</h1>
+<h1 appApphighlight>Custom directives</h1>
+<p>command to generate directives (ng g d name)</p>
+<div appApphighlight>
+This is the Angular ngstyle Attribute directives
+</div>
+<div [ngStyle]="{'background-color' : name ==='angular15'? 'red' :'yellow'}">
+This is the Angular ngstyle Attribute directives
+</div>
+
+<ul appApphighlight>
     <h1>Sturctural Directives</h1>
     <li>*ngIf</li>
     <li>*ngFOr</li>
@@ -26,9 +40,6 @@ TOtal students :{{students.length}}
 <div *ngFor="let s of students">
 {{s.name}}
 </div>
-
-
-
 
 
 

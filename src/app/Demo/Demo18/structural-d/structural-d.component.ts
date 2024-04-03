@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./structural-d.component.css']
 })
 export class StructuralDComponent {
+  name:string="angular"
   students:any=[
     {name:'john'},
     {name:'rohan'},

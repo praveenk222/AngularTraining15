@@ -35,6 +35,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { LoginformComponent } from './components/materials/loginform/loginform.component';
 import {MatCardModule} from '@angular/material/card';
 import { StructuralDComponent } from './Demo/Demo18/structural-d/structural-d.component';
+import { ApphighlightDirective } from './apphighlight.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,7 +61,8 @@ import { StructuralDComponent } from './Demo/Demo18/structural-d/structural-d.co
     HookparentComponent,
     DatatableComponent,
     LoginformComponent,
-    StructuralDComponent
+    StructuralDComponent,
+    ApphighlightDirective
   ],
   imports: [
     BrowserModule,
