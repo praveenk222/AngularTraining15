@@ -36,6 +36,8 @@ import { LoginformComponent } from './components/materials/loginform/loginform.c
 import {MatCardModule} from '@angular/material/card';
 import { StructuralDComponent } from './Demo/Demo18/structural-d/structural-d.component';
 import { ApphighlightDirective } from './apphighlight.directive';
+import { RxjsComponent } from './Demo/Demo18/structural-d/Demo20/rxjs/rxjs.component';
+import { ContactsComponent } from './Demo/Demo18/structural-d/Demo20/rxjs/contacts/contacts.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +64,9 @@ import { ApphighlightDirective } from './apphighlight.directive';
     DatatableComponent,
     LoginformComponent,
     StructuralDComponent,
-    ApphighlightDirective
+    ApphighlightDirective,
+    RxjsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

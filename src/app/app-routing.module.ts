@@ -16,6 +16,7 @@ import { HookparentComponent } from './hooks/lifecycle-hooks/hookparent/hookpare
 import { DatatableComponent } from './components/materials/datatable/datatable.component';
 import { LoginformComponent } from './components/materials/loginform/loginform.component';
 import { StructuralDComponent } from './Demo/Demo18/structural-d/structural-d.component';
+import { RxjsComponent } from './Demo/Demo18/structural-d/Demo20/rxjs/rxjs.component';
 
 const routes: Routes = [
   { path: 'emp', component: EmplistComponent ,pathMatch: 'full'} ,
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'dttable', component: DatatableComponent },
   { path: 'login', component: LoginformComponent },
   { path: 'directives', component: StructuralDComponent },
+  { path: 'rxjs', component: RxjsComponent },
 
 ];
 
